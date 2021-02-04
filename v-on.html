@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>⼩滴课堂vue快速⼊⻔</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{msg}}</p>
+        <button v-on:click = changetitle></button>
+    </div>
+    
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+               msg:"11111111"
+            },
+            methods: {
+                changetitle:function(){
+                    this.msg = "------"+this.msg
+
+                }
+            },
+        })
+    </script>
+</body>
+
+
+</script>
+</html>
